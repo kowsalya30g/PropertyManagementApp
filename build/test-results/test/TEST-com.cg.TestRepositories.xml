@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cg.TestRepositories" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-05-09T20:20:58" hostname="MANIKA18" time="0.393">
+  <properties/>
+  <testcase name="testDeleteManager()" classname="com.cg.TestRepositories" time="0.264"/>
+  <testcase name="testFindAllOwner()" classname="com.cg.TestRepositories" time="0.028"/>
+  <testcase name="addStaff()" classname="com.cg.TestRepositories" time="0.009"/>
+  <testcase name="testGetAllBuyer()" classname="com.cg.TestRepositories" time="0.006"/>
+  <testcase name="testGetAllStaff()" classname="com.cg.TestRepositories" time="0.004"/>
+  <testcase name="testGetAllManager()" classname="com.cg.TestRepositories" time="0.005"/>
+  <testcase name="testSaveOwner()" classname="com.cg.TestRepositories" time="0.007"/>
+  <testcase name="testBuyerExistsOrNot()" classname="com.cg.TestRepositories" time="0.005"/>
+  <testcase name="testGetAllTenants()" classname="com.cg.TestRepositories" time="0.003"/>
+  <testcase name="testFindByNameOwner()" classname="com.cg.TestRepositories" time="0.003"/>
+  <system-out><![CDATA[2022-05-10 01:50:46.372  INFO 16164 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cg.TestRepositories], using SpringBootContextLoader
+2022-05-10 01:50:46.373  INFO 16164 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.cg.TestRepositories]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-05-10 01:50:46.373  INFO 16164 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.cg.TestRepositories]: TestRepositories does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-05-10 01:50:46.379  INFO 16164 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.cg.PmsApplication for test class com.cg.TestRepositories
+2022-05-10 01:50:46.382  INFO 16164 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-05-10 01:50:46.383  INFO 16164 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65698020, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@57617a75, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3794b7b1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3225d950, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1be427b4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@470a446f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@55315a00, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4942e6af, org.springframework.test.context.event.EventPublishingTestExecutionListener@73a1a1b4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@669daa93, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@39a30d1a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@670ae31f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1958524b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@129aaac1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3370be55]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.6)
+
+2022-05-10 01:50:46.422  INFO 16164 --- [    Test worker] com.cg.TestRepositories                  : Starting TestRepositories using Java 1.8.0_321 on Manika18 with PID 16164 (started by manik in D:\sts workspace\PMS)
+2022-05-10 01:50:46.422  INFO 16164 --- [    Test worker] com.cg.TestRepositories                  : No active profile set, falling back to 1 default profile: "default"
+2022-05-10 01:50:49.092  INFO 16164 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-10 01:50:49.410  INFO 16164 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 317 ms. Found 10 JPA repository interfaces.
+2022-05-10 01:50:51.677  INFO 16164 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-10 01:50:51.684  INFO 16164 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-05-10 01:50:51.756  INFO 16164 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-05-10 01:50:51.757  INFO 16164 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-05-10 01:50:51.761  WARN 16164 --- [    Test worker] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [com.cg.entities.Person] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2022-05-10 01:50:52.297  INFO 16164 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-10 01:50:52.298  INFO 16164 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-10 01:50:52.817  WARN 16164 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-10 01:50:56.435  INFO 16164 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-05-10 01:50:57.013  INFO 16164 --- [    Test worker] com.cg.TestRepositories                  : Started TestRepositories in 10.627 seconds (JVM running for 32.691)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
